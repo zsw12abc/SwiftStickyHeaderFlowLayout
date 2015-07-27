@@ -14,11 +14,20 @@
                     <rect key="frame" x="-77" y="-100" width="520" height="520"/>
                     <animations/>
                 </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="hbo-rc-FiG">
+                    <rect key="frame" x="135" y="0.0" width="50" height="50"/>
+                    <animations/>
+                </imageView>
             </subviews>
             <animations/>
+            <constraints>
+                <constraint firstItem="hbo-rc-FiG" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="9gS-6i-WBZ"/>
+                <constraint firstItem="hbo-rc-FiG" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="dxM-TT-u2M"/>
+            </constraints>
         </collectionReusableView>
     </objects>
     <resources>
+        <image name="Pokeball" width="50" height="50"/>
         <image name="header" width="520" height="520"/>
     </resources>
 </document>

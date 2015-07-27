@@ -46,14 +46,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Locate your layout
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+    //Section Header 的个数
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 5
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return 1
     }
     
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! customCollectionViewCell
-        cell.cellLabel.text = "here"
+        cell.cellLabel.text = "I am Pikachu"
         cell.cellImage.image = UIImage(named: "pikachu")
         return cell
     }
